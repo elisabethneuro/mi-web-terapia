@@ -47,6 +47,57 @@ header {
   top: 48px;
   z-index: 15;
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff0f5; /* rosa champán suave */
+  border-bottom: 1px solid #d8a9b1;
+  flex-wrap: wrap;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-name {
+  color: #d8a9b1;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.right-header {
+  color: #d8a9b1;
+  font-style: italic;
+  text-align: right;
+  max-width: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  width: 100%;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d8a9b1;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .nombre {
   font-weight: 700;
   font-size: 1.5rem;
