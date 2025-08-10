@@ -5,12 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Elisabeth Coba Jiménez</title>
 <style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #fff;
     color: #333;
   }
+
+  main {
+    flex: 1 0 auto;
+    min-height: 400px;
+    padding: 0 20px 20px 20px;
+  }
+
   header {
     display: flex;
     justify-content: space-between;
@@ -76,12 +87,20 @@
   /* Secciones ocultas por defecto para pestañas */
   section {
     display: none;
-    padding: 20px;
+    padding: 20px 0;
   }
   section.active {
     display: block;
   }
 
+  footer {
+    flex-shrink: 0;
+    background-color: #f4c2c2;
+    color: #b56576;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+  }
 </style>
 </head>
 <body>
@@ -105,41 +124,29 @@
   </ul>
 </nav>
 
-<section id="inicio" class="active">
-  <!-- Aquí puedes poner contenido extra para la página de inicio si quieres -->
-  <p>Bienvenida a mi web de Terapia Ocupacional Neurológica.</p>
-</section>
+<main>
+  <section id="inicio" class="active">
+    <p>Bienvenida a mi web de Terapia Ocupacional Neurológica.</p>
+  </section>
 
-<section id="quienSoy">
-  <h2><u>Me presento</u></h2>
-  <p>Mi nombre es Elisabeth Coba Jiménez y me apasiona el mundo de las neurociencias, específicamente la investigación de enfermedades en el sistema nervioso central y su implicación en la vida diaria de las personas. Me he formado dentro de mi disciplina de terapia ocupacional en la atención neurológica en pacientes con ictus, enfermedades neurodegenerativas, TCE (traumatismos craneoencefálicos), tumores cerebrales, enfermedades infecciosas.... Disfruto mucho con mi trabajo y sobre todo ver cómo da sus frutos en el día a día de los pacientes que atiendo.</p>
-</section>
+  <section id="quienSoy">
+    <h2><u>Me presento</u></h2>
+    <p>Mi nombre es Elisabeth Coba Jiménez y me apasiona el mundo de las neurociencias, específicamente la investigación de enfermedades en el sistema nervioso central y su implicación en la vida diaria de las personas. Me he formado dentro de mi disciplina de terapia ocupacional en la atención neurológica en pacientes con ictus, enfermedades neurodegenerativas, TCE (traumatismos craneoencefálicos), tumores cerebrales, enfermedades infecciosas.... Disfruto mucho con mi trabajo y sobre todo ver cómo da sus frutos en el día a día de los pacientes que atiendo.</p>
+  </section>
 
-<section id="servicios">
-  <h2>Servicios</h2>
-  <ul>
-    <li>Rehabilitación tras ictus y TCE</li>
-    <li>Estimulación cognitiva y memoria</li>
-    <li>Intervención en enfermedades neurodegenerativas</li>
-    <li>Atención a pacientes con tumores cerebrales</li>
-    <li>Soporte en enfermedades infecciosas del sistema nervioso</li>
-  </ul>
-</section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Rehabilitación tras ictus y TCE</li>
+      <li>Estimulación cognitiva y memoria</li>
+      <li>Intervención en enfermedades neurodegenerativas</li>
+      <li>Atención a pacientes con tumores cerebrales</li>
+      <li>Soporte en enfermedades infecciosas del sistema nervioso</li>
+    </ul>
+  </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p>Email: tuemail@ejemplo.com</p>
-  <p>Teléfono: +34 600 000 000</p>
-</section>
-
-<script>
-  function mostrarSeccion(id) {
-    document.querySelectorAll('section').forEach(sec => {
-      sec.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
-  }
-</script>
-
-</body>
-</html>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: tuemail@ejemplo.com</p>
+    <p>Teléfono: +34 600 000 000</p>
+  </sectio
