@@ -1,103 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terapia Ocupacional Neurológica y Estimulación Cognitiva - Elisabeth Coba Jiménez</title>
-  <link href="styles.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elisabeth Coba Jiménez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf9f9;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #d8a9b1;
+        }
+
+        .site-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #d8a9b1;
+        }
+
+        .subtitle {
+            font-size: 1em;
+            color: #444;
+            text-align: right;
+        }
+
+        .subtitle p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #444;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d8a9b1;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            border-top: 2px solid #d8a9b1;
+            font-size: 0.9em;
+            color: #888;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
-  <nav>
-    <button class="tab-btn active" data-tab="inicio">Inicio</button>
-    <button class="tab-btn" data-tab="presentacion">Quién soy</button>
-    <button class="tab-btn" data-tab="curriculum">Currículum</button>
-    <button class="tab-btn" data-tab="servicios">Servicios</button>
-    <button class="tab-btn" data-tab="contacto">Contacto</button>
-  </nav>
-
-  <header>
-  <div class="left-header">
-    <img src="mi-foto.jpg" alt="Foto Elisabeth" style="width: 80px; height: 80px; border-radius: 50%; display: block; margin-bottom: 5px;">
+<header>
     <div class="site-name">Elisabeth Coba Jiménez</div>
-  </div>
-  <div class="right-header">
     <div class="subtitle">
-      Terapia Ocupacional Neurológica y Estimulación Cognitiva
-      <p><em>"Tu frase aquí en cursiva"</em></p>
+        Terapia Ocupacional Neurológica y Estimulación Cognitiva
+        <p>"Aquí iría tu frase en cursiva"</p>
     </div>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#quien-soy">Quién Soy</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
 </header>
 
-
-  <main>
-    <section id="inicio" class="active">
-      <!-- Espacio para futuras imágenes o texto -->
-    </section>
-    <section id="presentacion">
-      <h2>Presentación</h2>
-      <p>
-        Hola, soy <strong>Elisabeth Coba Jiménez</strong>, graduada en Terapia Ocupacional especializada en terapia ocupacional neurológica.  
-        Mi objetivo es ayudarte a mejorar tu calidad de vida mediante tratamientos personalizados adaptados a tus necesidades.
-      </p>
-    </section>
-    <section id="curriculum">
-      <h2 style="text-decoration: underline;">Me presento</h2>
-      <p>
-        Mi nombre es Elisabeth Coba Jiménez y me apasiona el mundo de las neurociencias, 
-        específicamente la investigación de enfermedades en el sistema nervioso central y su implicación 
-        en la vida diaria de las personas. Me he formado dentro de mi disciplina de Terapia Ocupacional en 
-        la atención neurológica en pacientes con ictus, enfermedades neurodegenerativas, TCE (traumatismos craneoencefálicos), 
-        tumores cerebrales, enfermedades infecciosas... Disfruto mucho con mi trabajo y sobre todo ver cómo da sus frutos en el día a día 
-        de los pacientes que atiendo.
-      </p>
-    </section>
-    <section id="servicios">
-      <h2>Servicios que Ofrezco</h2>
-      <ul>
-        <li>Evaluación y diagnóstico funcional neurológico.</li>
-        <li>Planificación y aplicación de terapias ocupacionales personalizadas.</li>
-        <li>Rehabilitación para pacientes con lesiones medulares, ictus, esclerosis múltiple, Parkinson y otras patologías neurológicas.</li>
-        <li>Apoyo y asesoramiento a familiares y cuidadores.</li>
-      </ul>
-    </section>
-    <section id="contacto">
-      <h2>Contacto</h2>
-      <p>Estoy disponible para consultas y valoraciones personalizadas. Puedes contactarme en:</p>
-      <ul>
-        <li>Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></li>
-        <li>Teléfono: +34 600 000 000</li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">linkedin.com/in/tuusuario</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 Elisabeth Coba Jiménez - Terapia Ocupacional Neurológica y Estimulación Cognitiva
-  </footer>
-
-  <script>
-    const tabs = document.querySelectorAll('.tab-btn');
-    const sections = document.querySelectorAll('main section');
-
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        sections.forEach(s => s.classList.remove('active'));
-
-        tab.classList.add('active');
-        document.getElementById(tab.dataset.tab).classList.add('active');
-      });
-    });
-  </script>
-
-</body>
-</html>
+<nav>
+    <a href="#quien-soy">Quién soy</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#co
